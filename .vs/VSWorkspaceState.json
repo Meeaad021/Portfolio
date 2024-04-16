@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\components"
   ],
-  "SelectedNode": "\\C:\\Users\\user\\React\\Meeaads Portfolio",
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }
