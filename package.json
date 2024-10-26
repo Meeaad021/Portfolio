@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "eslint-plugin-react-hooks": "^5.1.0-rc-1631855f-20241023",
+    "interactjs": "^1.10.27"
+  }
+}
