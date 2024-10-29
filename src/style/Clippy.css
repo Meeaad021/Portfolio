@@ -1,0 +1,36 @@
+
+.clippy-icon {
+    width: 70px;
+    height: 70px;
+    margin-top: 400px;
+    margin-left: 1200px;
+    cursor: pointer;
+}
+
+.clippy-speech-bubble {
+    position: absolute;
+    top: 400px;
+    right: 7%; /* Adjusted to right align */
+    max-width: 100%; /* Adjust the width as needed */
+    background-color: #c6c6c6;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Added */
+}
+
+    .clippy-speech-bubble::after {
+        content: '';
+        position: absolute;
+        top: 30px; /* Adjusted to connect to the top of the speech bubble */
+        right: -20px; /* Adjusted to align with the right side of the speech bubble */
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent transparent #000; /* Flipped the border color */
+    }
+
+    .clippy-speech-bubble p {
+        margin: 0;
+        color: black;
+    }
