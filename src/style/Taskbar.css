@@ -45,90 +45,42 @@
 
 .menu {
     position: absolute;
-    bottom: -202px;
-    left: 40px;
+    bottom: 36px;
+    left: 2px;
     z-index: 2;
     background-color: rgb(198, 198, 198);
     font-family: "Windows Regular";
-    width: 180px; 
-    height: 241px;
-    line-height: 30px;
+    width: 160px; 
+    height: 242px;
+    line-height: 50px;
     text-rendering: optimizeSpeed;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    box-shadow: inset 1 1 1 1px rgba(0,0,0,0.5); 
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
+    background: #c6c6c6;
+    box-shadow: #dfdfdf 1px 1px inset, #000 1px 0, #000 0 1px, #000 1px 1px;
+    border: 1px solid black;
+    border-top: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+    border-radius: 0;
 }
 
-.menubanner {
-    position: absolute;
-    bottom: 31.7px;
-    left: 1px;
-    z-index: 2;
-    background-color: rgb(198, 198, 198);
-    font-family: "Windows Regular";
-    width: 40px; 
-    height: 200px;
-    line-height: 30px;
-    text-rendering: optimizeSpeed;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+.menusidebar img{
+  height: 238px;
+  width: 30px;
 }
 
-.menubanner img {
-  width: 40px;
-  height: 200px;
-}
-
-.menuheadshot {
-    position: absolute;
-    bottom: 200px;
-    left: -1px;
-    z-index: 2;
-    background-color: rgb(198, 198, 198);
-    font-family: "Windows Regular";
-    width: 40px; 
-    height: 40px;
-    line-height: 30px;
-    text-rendering: optimizeSpeed;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-}
-
-.menuheadshot img {
-  width: 40px;
-  height: 40px;
-}
-
-.menu ul {
-    flex: 1; 
-    padding: 0;
-    margin: 0;
+.menulist ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     text-decoration: none;
     line-break: 1px solid black #2a3f55;
     line-height: 1rem;
   }
 
 .menu ul li {
-  border-bottom: 1px solid black;
   padding: 10px 0;
   color: black;
-
+  flex-direction: column;
 }
 
 .menu ul li a {
@@ -141,7 +93,7 @@
   width: 20px; 
   height: 20px;
   margin-right: 5px;
-  margin-left: 5px;
+  margin-left: -20px;
 }
 
 .tasks {
