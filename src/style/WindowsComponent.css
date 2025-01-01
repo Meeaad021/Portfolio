@@ -1,0 +1,49 @@
+.custom-window {
+    position: absolute;
+    width: 690px;
+    border: 2px 0px 2px solid #000; /* Dark border for the window */
+    background: #c0c0c0; /* Light gray background */
+    background: #c6c6c6;
+    box-shadow: #dfdfdf 1px 1px inset, #000 1px 0, #000 0 1px, #000 1px 1px;
+    border: 1px solid black;
+    border-top: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+    border-radius: 0;
+  }
+  
+  .top-bar {
+    background: #000080; /* Classic blue title bar */
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    z-index: 10;
+    margin: 0; /* No margin for a flush look */
+    padding: 5px; /* Slightly more padding */
+    color: white; /* Title text color */
+    font-family: "MS Sans Serif", sans-serif; /* System font */
+  }
+  
+  .title {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .controls {
+    display: flex;
+  }
+  
+  .close-button {
+    background: #c0c0c0; /* Button background */
+    color: black; /* Button text color */
+    border: 2px outset #ffffff; /* 3D effect */
+    cursor: pointer;
+    padding: 2px 5px; /* Padding for buttons */
+    font-family: "MS Sans Serif", sans-serif; /* System font */
+  }
+  
+  .close-button:hover {
+    border: 2px inset #ffffff; /* Change border on hover for effect */
+  }
+  

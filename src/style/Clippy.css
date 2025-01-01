@@ -7,6 +7,17 @@
     cursor: pointer;
 }
 
+.click-me-button {
+    margin-top: 20px; /* Space between the text and the button */
+    padding: 5px 10px; /* Padding for the button */
+    background-color: #005f5f; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    align-self: flex-end; /* Align the button to the right */
+}
+
 .clippy-speech-bubble {
     position: absolute;
     top: 400px;
@@ -17,7 +28,7 @@
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: inline-block; /* Added */
+    display: flex; /* Added */
 }
 
     .clippy-speech-bubble::after {
@@ -31,6 +42,9 @@
     }
 
     .clippy-speech-bubble p {
-        margin: 0;
+        font-size: medium;
+        margin: 15px;
         color: black;
+        justify-content: center;
+        align-items: center;
     }

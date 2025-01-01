@@ -6,51 +6,40 @@ import ClippyComponent from '../components/Clippy';
 import Mycomputer from '../images/Mycomputer.png';
 import Edge from '../images/Edge.png';
 import CloseIcon from '../images/Closeicon.png';
+import Window from '../components/WindowsComponent';
 
 const Desktop = () => {
-    const [showMyComputer, setShowMyComputer] = useState(false);
-    const [showSkills, setShowSkills] = useState(false);
 
-    const toggleMyComputer = () => {
-        setShowMyComputer(!showMyComputer);
+    const [isMyComputerOpen, setIsMyComputerOpen] = useState(false);
+
+    // Function to open the My Computer window
+    const openMyComputer = () => {
+        setIsMyComputerOpen(true);
     };
 
-    const toggleSkills = () => {
-        setShowSkills(!showSkills);
+    // Function to close the My Computer window
+    const closeMyComputer = () => {
+        setIsMyComputerOpen(false);
     };
+
 
     return (
         <div className="desktop-container">
-            <div className="my-computer" onClick={toggleMyComputer}>
-                <img src={Mycomputer} alt="My Computer" className="my-computer-icon" />
-                <span className="my-computer-text">My Computer</span>
-            </div>
-            <div className="skills-icon" onClick={toggleSkills}>
-                <img src={Edge} alt="Edge" className="Edge-icon" />
-                <span className="skills-text">Skills</span>
-            </div>
             <div className="clippy-container">
                 <ClippyComponent />
-            </div>
-            {showMyComputer && (
-                <div className="my-computer-window">
-                    <div className="title-bar">
-                        <div className="title-bar-text">My Computer</div>
-                        <div className="title-bar-controls">
-                            <button aria-label="Close" onClick={toggleMyComputer} className="windows-button">
-                                <img src={CloseIcon} alt="Close" />
-                            </button>
-                        </div>
-                    </div>
+                <div className="my-computer-icon-container"><img src={Mycomputer} alt="Open My Computer" className="my-computer-icon" onClick={openMyComputer}/>
+                 <p className="my-computer-text">My Computer</p>
+            </div>            {/* Render the My Computer window if it's open */}
+            {isMyComputerOpen && (
+                <Window windowId="myComputer" title="My Computer" onClose={closeMyComputer}>
                     <div className="my-computer-content">
-                        <div>
-                            <p>This is the content of My Computer.</p>
-                        </div>
+                        <img src={Mycomputer} alt="My Computer" />
+                        <p>This is the content of the My Computer window.</p>
+                        {/* You can add more content here as needed */}
                     </div>
-                </div>
-            )}
-            {showSkills && <Skills toggleSkills={toggleSkills} />}
-            <Taskbar />
+                </Window>)}
+            </div>
+                <Taskbar />
         </div>
     );
 };

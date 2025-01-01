@@ -6,85 +6,9 @@
     width: 100vw;
     height: 100vh;
     background-color: #017d7d;
+    overflow: hidden;
     font-family: 'px sans nouveaux', Arial, Helvetica, sans-serif;
 }
-
-.my-computer,
-.skills-icon {
-    top: 10px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.skills-icon {
-    top: 70px;
-    left: 30px;
-}
-
-.my-computer-icon {
-    width: 30px;
-    height: auto;
-}
-
-.my-computer-text,
-.skills-text {
-    font-size: 16px;
-    font-weight: bold;
-    color: #000;
-}
-
-.my-computer-window {
-    left: 20%;
-    width: 60%;
-    height: calc(100vh - 40px); /* Adjust height to fit within the viewport */
-    position: absolute;
-    background-color: #c0c0c0; /* Light gray */
-    border: 2px outset #ffffff; /* 3D effect */
-    overflow: hidden; /* Prevent scrolling */
-    top: 10px; /* Adjust top position */
-}
-
-.my-computer-content {
-    padding: 8px;
-    height: auto;
-    width: calc(100% - 20px);
-    background-color: #c6c6c6;
-    display: inline-block;
-    color: black;
-}
-
-.title-bar {
-    height: 20px;
-    position: relative;
-    text-align: left;
-    color: #fff;
-    padding: 1px;
-    line-height: 1.4;
-    border: 1px solid silver;
-    background: #017d7d;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.title-bar-controls button {
-    display: inline-block;
-    -moz-appearance: none;
-    appearance: none;
-    font-weight: 700;
-    letter-spacing: .05em;
-    padding: 0px;
-    border: 2px solid #404040;
-    background-color: #017d7d;
-}
-
-    .title-bar-controls button:hover {
-        background-color: rgba(255, 255, 255, 0.1);
-    }
 
 .clippy-component {
     position: absolute;
@@ -92,6 +16,22 @@
     right: 10px; /* Adjust as needed */
     z-index: 1; /* Ensures it stays below other elements */
     pointer-events: none; /* Makes it non-clickable */
+}
+
+.my-computer-icon {
+    position: absolute; /* Position the image absolutely */
+    top: -220px; /* Distance from the top */
+    left: -235px; /* Distance from the left */
+    max-width: 100px; /* Limit the size of the icon */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Change cursor to pointer for clickability */
+}
+
+.my-computer-text {
+    font-size: x-small;
+    position: absolute; /* Position the image absolutely */
+    top: -180px; /* Distance from the top */
+    left: -235px; /* Distance from the left */
 }
 
 @media (max-width: 768px) {
