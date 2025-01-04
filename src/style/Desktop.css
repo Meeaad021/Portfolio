@@ -3,8 +3,8 @@
 }
 
 .desktop-container {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: #017d7d;
     overflow: hidden;
     font-family: 'px sans nouveaux', Arial, Helvetica, sans-serif;
