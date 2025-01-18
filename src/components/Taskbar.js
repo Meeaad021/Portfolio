@@ -3,7 +3,6 @@ import '../style/Taskbar.css';
 import win98StartMenuImage from '../images/Win98StartMenu.webp';
 import Win98Volume from '../images/Win98Volume.png';
 import sidebar95 from '../images/sidebar95.png';
-import Meeaadheadshot from '../images/Meeaadheadshot.jpg';
 import linkedinlogo from '../images/linkedinlogo.jpg';
 import Resumeicon from '../images/Resumeicon.png';
 import Github from '../images/Github.png';

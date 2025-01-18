@@ -27,18 +27,9 @@ const Desktop = () => {
         <div className="desktop-container">
             <div className="clippy-container">
                 <ClippyComponent />
-                <div className="my-computer-icon-container"><img src={Mycomputer} alt="Open My Computer" className="my-computer-icon" onClick={openMyComputer}/>
-                 <p className="my-computer-text">My Computer</p>
-            </div>            {/* Render the My Computer window if it's open */}
-            {isMyComputerOpen && (
-                <Window windowId="myComputer" title="My Computer" onClose={closeMyComputer}>
-                    <div className="my-computer-content">
-                        <img src={Mycomputer} alt="My Computer" />
-                        <p>This is the content of the My Computer window.</p>
-                        {/* You can add more content here as needed */}
-                    </div>
-                </Window>)}
             </div>
+            <div className="my-computer-icon-container"><img src={Mycomputer} alt="Open My Computer" className="my-computer-icon" onClick={openMyComputer}/>
+                         </div>            {/* Render the My Computer window if it's open */}
                 <Taskbar />
         </div>
     );

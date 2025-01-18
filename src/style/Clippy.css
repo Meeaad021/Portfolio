@@ -1,10 +1,12 @@
 
 .clippy-icon {
-    width: 70px;
-    height: 70px;
+    width: 5%;
+    height: 15%;
     margin-top: 400px;
     margin-left: 1200px;
     cursor: pointer;
+    bottom: 100%;
+    right: 10px;
 }
 
 .click-me-button {
@@ -48,3 +50,10 @@
         justify-content: center;
         align-items: center;
     }
+
+   .clippy-container {
+        position: absolute;
+        bottom: 30px;
+        right: 20px;
+    }
+    

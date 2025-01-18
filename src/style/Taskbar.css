@@ -1,13 +1,10 @@
 .taskbar {
   position: fixed;
   bottom: 0;
-  left: 0;
   width: 100%;
   display: flex;
   align-items: center;
   background-color: lightgrey;
-  color: white;
-  padding: 5px;
   height: 4.5%;
   outline: 1px solid white;
 }
@@ -98,16 +95,13 @@
 
 .tasks {
   font-size: 10px;
-  margin-right: 8px;
   margin-left: auto;
   border-bottom: 1px solid black rgb(223, 223, 223);
   border-right: 1px solid rgb(223, 223, 223);
   border-top: 1px solid rgb(112, 112, 112);
   border-left: 1px solid rgb(112, 112, 112);
-  padding: 4.5px 12px;
   display: flex;
-  align-items: center;
-  white-space: nowrap;
+  justify-self: right;
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
