@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.859ab0e6.css",
+    "main.css": "/Portfolio/static/css/main.011966c2.css",
     "main.js": "/Portfolio/static/js/main.1e40bc21.js",
     "static/media/Aboutmegradpic.jpg": "/Portfolio/static/media/Aboutmegradpic.92da8e14160c2287fe5e.jpg",
     "static/media/ReactIcon.png": "/Portfolio/static/media/ReactIcon.6bcffb56bd0efaa47767.png",
@@ -8,11 +8,11 @@
     "static/media/SeleniumIcon.png": "/Portfolio/static/media/SeleniumIcon.db2137ca9ae8fe1da347.png",
     "static/media/Win98StartMenu.webp": "/Portfolio/static/media/Win98StartMenu.f8145e23a45df5a74656.webp",
     "index.html": "/Portfolio/index.html",
-    "main.859ab0e6.css.map": "/Portfolio/static/css/main.859ab0e6.css.map",
+    "main.011966c2.css.map": "/Portfolio/static/css/main.011966c2.css.map",
     "main.1e40bc21.js.map": "/Portfolio/static/js/main.1e40bc21.js.map"
   },
   "entrypoints": [
-    "static/css/main.859ab0e6.css",
+    "static/css/main.011966c2.css",
     "static/js/main.1e40bc21.js"
   ]
 }
